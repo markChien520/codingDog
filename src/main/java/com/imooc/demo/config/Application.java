@@ -21,7 +21,7 @@ public class Application {
         Environment env = app.run(args).getEnvironment();
 
 
-        System.out.println("启动成功！！");
+        System.out.println("启动成功！！");//
         System.out.println("根地址: \t\thttp://127.0.0.1:" + env.getProperty("server.port"));
         System.out.println("登录接口: \thttp://127.0.0.1:" + env.getProperty("server.port") +
                 "/user/login?loginName=test&password=test");
