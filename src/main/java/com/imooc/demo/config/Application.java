@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
-@ComponentScan("com") //扫描
+@ComponentScan("com") //扫描henme
 @MapperScan("com.imooc.demo.mapper")//mabatis 映射类
 public class Application {
 
