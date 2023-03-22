@@ -15,7 +15,10 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        UserDto userDto = userService.doLogin(null);
+        UserDto userDto1 = new UserDto();
+        userDto1.setLoginName("mjw");
+        userDto1.setPassword("123");
+        UserDto userDto = userService.doLogin(userDto1);
         System.out.println(123);
         return "Greetings from Spring Boot!";
 

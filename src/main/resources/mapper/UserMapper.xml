@@ -4,13 +4,13 @@
 
     <select id="findByLoginName" resultType="com.imooc.demo.domain.User">
         select `id`, `login_name` as loginName, `name`, `password`
-        from `user`
+        from `userinfo`
         where `login_name` = #{loginName}
     </select>
 
     <select id="list" resultType="com.imooc.demo.domain.User">
         select `id`, `login_name` as loginName, `name`, `password`
-        from `user`
+        from `userinfo`
     </select>
 
 </mapper>
